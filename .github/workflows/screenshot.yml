@@ -1,0 +1,27 @@
+# nnw-theme-stub: screenshot v2
+name: Refresh marketplace screenshot
+
+on:
+  workflow_dispatch:
+    inputs:
+      fixture:
+        description: Fixture to capture
+        type: choice
+        options: [article, kitchen-sink]
+        default: article
+      appearance:
+        description: Appearance to capture
+        type: choice
+        options: [light, dark]
+        default: light
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  screenshot:
+    uses: dave-atx/nnw-theme/.github/workflows/theme-screenshot.yml@v2
+    with:
+      fixture: ${{ inputs.fixture }}
+      appearance: ${{ inputs.appearance }}
