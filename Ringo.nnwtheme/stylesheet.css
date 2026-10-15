@@ -9,9 +9,7 @@
   --rule: #d8d2c6;
   --code-surface: #ebe7de;
   --measure: 42rem;
-  --display-font:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    sans-serif;
+  --display-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   --body-font: var(--display-font);
   --code-font: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 }
