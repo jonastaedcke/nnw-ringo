@@ -1,0 +1,52 @@
+<!-- NetNewsWire template variables. Each name below is used in double
+brackets, which are left off here: NetNewsWire substitutes macros inside
+comments too, and an article that closes a comment would end this one early.
+
+Article:
+  title                      Article title.
+  preferred_link             Best URL for opening the article.
+  body                       Article body as HTML.
+
+Feed and author:
+  feed_link_title            Feed name.
+  feed_link                  Feed URL.
+  byline                     Author names and links as HTML.
+  avatar_src                 Source URL for the feed icon or avatar.
+
+External link:
+  external_link_label        Localized label for the external link.
+  external_link_stripped     External URL without its scheme, for display.
+  external_link              External URL supplied by the article author.
+
+Date and time:
+  dateline_style             "articleDateline" when a title exists;
+                             otherwise "articleDatelineTitle".
+  datetime_long              Long localized publication date and time.
+  datetime_medium            Medium localized publication date and time.
+  datetime_short             Short localized publication date and time.
+  date_long                  Long localized publication date.
+  date_medium                Medium localized publication date.
+  date_short                 Short localized publication date.
+  time_long                  Long localized publication time.
+  time_medium                Medium localized publication time.
+  time_short                 Short localized publication time.
+
+Presentation:
+  text_size_class            Article text-size class selected by the reader.
+-->
+<article class="article [[text_size_class]]" data-nnw-theme="starter">
+  <header class="article-header">
+    <time class="dateline [[dateline_style]]" datetime="[[datetime_long]]"
+      >[[date_long]] at [[time_short]]</time
+    >
+    <h1><a href="[[preferred_link]]">[[title]]</a></h1>
+    <div class="byline">[[byline]]</div>
+    <a class="feed" href="[[feed_link]]">[[feed_link_title]]</a>
+  </header>
+  <div class="articleBody">
+    [[body]]
+    <div class="externalLink">
+      <a href="[[external_link]]">[[external_link]]</a>
+    </div>
+  </div>
+</article>
