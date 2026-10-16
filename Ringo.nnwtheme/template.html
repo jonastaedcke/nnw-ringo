@@ -34,19 +34,23 @@ Date and time:
 Presentation:
   text_size_class            Article text-size class selected by the reader.
 -->
-<article class="article [[text_size_class]]" data-nnw-theme="starter">
-  <header class="article-header">
-    <time class="dateline [[dateline_style]]" datetime="[[datetime_long]]"
-      >[[date_long]] at [[time_short]]</time
-    >
-    <h1><a href="[[preferred_link]]">[[title]]</a></h1>
-    <div class="byline">[[byline]]</div>
-    <a class="feed" href="[[feed_link]]">[[feed_link_title]]</a>
-  </header>
-  <div class="articleBody">
-    [[body]]
-    <div class="externalLink">
-      <a href="[[external_link]]">[[external_link]]</a>
+<main>
+  <article class="article [[text_size_class]]" data-nnw-theme="starter">
+    <header class="article-header">
+      <img class="nnwImageIcon" src="[[avatar_src]]" alt="Icon of [[byline]]" />
+      <time class="dateline [[dateline_style]]" datetime="[[datetime_long]]">
+        [[date_long]] at [[time_short]]
+      </time>
+      <h1><a href="[[preferred_link]]">[[title]]</a></h1>
+
+      <a class="feed" href="[[feed_link]]">[[feed_link_title]]</a>
+      <div class="byline">[[byline]]</div>
+    </header>
+    <div class="articleBody">
+      [[body]]
+      <div class="externalLink">
+        <a href="[[external_link]]">[[external_link]]</a>
+      </div>
     </div>
-  </div>
-</article>
+  </article>
+</main>
