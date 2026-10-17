@@ -11,4 +11,4 @@ permissions:
 
 jobs:
   check:
-    uses: dave-atx/nnw-theme/.github/workflows/theme-check.yml@v2
+    uses: dave-atx/nnw-theme/.github/workflows/theme-check.yml@b6e2af5d7a3cb98b25e281fc3135b3004c287107 # v2
