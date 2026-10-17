@@ -278,23 +278,28 @@ body {
   max-width: 100%;
   display: block;
 }
-.articleBody img:not(figure *),
-.articleBody video:not(figure *),
-.articleBody audio:not(figure *),
-.articleBody iframe:not(figure *) {
+.articleBody img:not(figure *, .wp-caption *),
+.articleBody video:not(figure *, .wp-caption *),
+.articleBody audio:not(figure *, .wp-caption *),
+.articleBody iframe:not(figure *, .wp-caption *) {
   max-width: calc(100% + 2 * var(--number-space-l));
   margin-left: calc(-1 * var(--number-space-l)) !important;
   margin-right: calc(-1 * var(--number-space-l)) !important;
 }
-.articleBody figure {
+.articleBody figure,
+.articleBody .wp-caption {
   margin-inline: 0;
   max-width: 100vw;
 }
-.articleBody figure:not(figure *) {
+.articleBody figure:not(figure *, .wp-caption *),
+.articleBody .wp-caption:not(figure *, .wp-caption *) {
   margin-left: calc(-1 * var(--number-space-l)) !important;
   margin-right: calc(-1 * var(--number-space-l)) !important;
 }
-.articleBody figure:not(figure *) figcaption {
+.articleBody figure:not(figure *, .wp-caption *) figcaption,
+.articleBody figure:not(figure *, .wp-caption *) .wp-caption-text,
+.articleBody .wp-caption:not(figure *, .wp-caption *) figcaption,
+.articleBody .wp-caption:not(figure *, .wp-caption *) .wp-caption-text {
   margin-left: var(--number-space-l);
   margin-right: var(--number-space-l);
 }
