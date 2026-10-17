@@ -21,7 +21,7 @@ permissions:
 
 jobs:
   screenshot:
-    uses: dave-atx/nnw-theme/.github/workflows/theme-screenshot.yml@v2
+    uses: dave-atx/nnw-theme/.github/workflows/theme-screenshot.yml@b6e2af5d7a3cb98b25e281fc3135b3004c287107 # v2
     with:
       fixture: ${{ inputs.fixture }}
       appearance: ${{ inputs.appearance }}
