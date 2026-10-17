@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.1.0...v1.1.1) (2026-10-17)
+
+### Fixed
+
+* extend WordPress caption boxes like figures
+
 ## [1.1.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.0.0...v1.1.0) (2026-10-16)
 
 ### Added
