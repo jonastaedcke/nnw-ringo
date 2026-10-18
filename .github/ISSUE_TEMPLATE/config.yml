@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: NetNewsWire app issue
+    url: https://github.com/Ranchero-Software/NetNewsWire/issues/new/choose
+    about: For problems that also occur with built-in themes.

@@ -1,0 +1,102 @@
+name: Ringo theme issue
+description: Report a display or layout problem with Ringo.
+title: '[Theme] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Problems that also occur with built-in themes belong in [NetNewsWire's issue tracker](https://github.com/Ranchero-Software/NetNewsWire/issues/new/choose).
+  - type: checkboxes
+    id: built-in-theme
+    attributes:
+      label: Scope check
+      options:
+        - label: The problem does not occur with built-in NetNewsWire themes.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: |
+        What happened, and what did you expect?
+        Add screenshots or a recording without private details.
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      description: Select all that apply.
+      multiple: true
+      options:
+        - Mac
+        - iPhone
+        - iPad
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      description: |
+        - Mac: Apple menu > About This Mac
+        - iPhone and iPad: Settings > General > About
+      placeholder: 'macOS 26.0'
+    validations:
+      required: true
+  - type: input
+    id: netnewswire-version
+    attributes:
+      label: NetNewsWire version
+      description: |
+        - Mac: NetNewsWire > About NetNewsWire
+        - iPhone and iPad: bottom of NetNewsWire's settings
+      placeholder: '7.1.1'
+    validations:
+      required: true
+  - type: input
+    id: ringo-version
+    attributes:
+      label: Ringo version
+      description: Title of the installed [release](https://github.com/jonastaedcke/nnw-ringo/releases).
+      placeholder: '1.1.1'
+    validations:
+      required: true
+  - type: dropdown
+    id: appearance
+    attributes:
+      label: Appearance
+      description: Select all that apply.
+      multiple: true
+      options:
+        - Light
+        - Dark
+    validations:
+      required: true
+  - type: input
+    id: layout
+    attributes:
+      label: Window mode and orientation
+      placeholder: 'iPad Split View, portrait'
+  - type: input
+    id: text-size
+    attributes:
+      label: Text size
+      description: NetNewsWire text size on the Mac, Dynamic Type on iPhone and iPad.
+      placeholder: 'Default, two steps larger'
+  - type: input
+    id: article-url
+    attributes:
+      label: Article URL
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to write this report.
