@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.1.1...v1.2.0) (2026-10-18)
+
+### Added
+
+* lay out Ghost and WordPress galleries, bookmark cards and portrait videos
+
+### Fixed
+
+* let text wrap around floated images
+* round embeds without a border and keep enclosures in the column
+
 ## [1.1.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.1.0...v1.1.1) (2026-10-17)
 
 ### Fixed
