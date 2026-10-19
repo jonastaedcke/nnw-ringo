@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.3.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.2.0...v1.3.0) (2026-10-19)
+
+### Added
+
+* add increased contrast palette for light and dark mode
+
+### Fixed
+
+* float media with sanitized WordPress alignment classes
+
+### Documentation
+
+* add light and dark README previews
+* update highlights and note AI-assisted development
+
 ## [1.2.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.1.1...v1.2.0) (2026-10-18)
 
 ### Added
