@@ -65,6 +65,34 @@
 /**
  * Do not edit directly, this file was auto-generated.
  */
+@media (prefers-contrast: more) and (prefers-color-scheme: light) {
+  :root {
+    --color-text: #3d3d3c;
+    --color-heading: #1f1e1e;
+    --color-muted: #454544;
+    --color-dateline: #454544;
+    --color-accent: #004c99;
+    --color-rule: #8c8577;
+    --color-code-text: #2f2f2e;
+  }
+}
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #dcdcdc;
+    --color-heading: #f4f4f4;
+    --color-muted: #c4c4c4;
+    --color-dateline: #c4c4c4;
+    --color-accent: #7cb8ff;
+    --color-rule: #7a8076;
+    --color-code-text: #e0e0e0;
+  }
+}
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
 /**
  * Do not edit directly, this file was auto-generated.
  */
@@ -278,23 +306,23 @@ body {
 .articleBody iframe {
   border-radius: var(--number-border-radius-l);
 }
-.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright) {
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
   height: auto !important;
   width: 100vw !important;
 }
-.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright),
-.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright),
-.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright),
-.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright) {
+.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]),
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]),
+.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]),
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
   display: block;
   box-sizing: border-box;
   height: auto;
   max-width: 100%;
 }
-.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright):not(figure *, .wp-caption *, video),
-.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright):not(figure *, .wp-caption *, video),
-.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright):not(figure *, .wp-caption *, video),
-.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright):not(figure *, .wp-caption *, video) {
+.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]):not(figure *, .wp-caption *, video),
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]):not(figure *, .wp-caption *, video),
+.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]):not(figure *, .wp-caption *, video),
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]):not(figure *, .wp-caption *, video) {
   max-width: calc(100% + 2 * var(--number-space-l));
   margin-left: calc(-1 * var(--number-space-l)) !important;
   margin-right: calc(-1 * var(--number-space-l)) !important;
@@ -304,19 +332,19 @@ body {
   margin-inline: 0;
   max-width: 100vw;
 }
-.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, .enclosure),
-.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, .enclosure) {
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]),
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
   margin-left: calc(-1 * var(--number-space-l)) !important;
   margin-right: calc(-1 * var(--number-space-l)) !important;
 }
-.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, .enclosure) figcaption,
-.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, .enclosure) .wp-caption-text,
-.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, .enclosure) figcaption,
-.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, .enclosure) .wp-caption-text {
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) figcaption,
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) .wp-caption-text,
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) figcaption,
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) .wp-caption-text {
   margin-left: var(--number-space-l);
   margin-right: var(--number-space-l);
 }
-.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright) {
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
   width: auto;
   max-height: 80vh;
   margin-inline: auto;
@@ -426,26 +454,28 @@ body {
   margin-block: 0 var(--number-space-s);
   max-width: 50%;
 }
-.articleBody :is(img, video, iframe):is([style*=float], [align=left i], [align=right i], .alignleft, .alignright) {
+.articleBody :is(img, video, iframe):is([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
   height: auto;
 }
 .articleBody .alignleft,
+.articleBody [data-sanitized-class*=alignleft],
 .articleBody :is(img, iframe, video)[align=left i] {
   float: left;
   clear: left;
   margin-inline: 0 var(--number-space-m);
 }
 .articleBody .alignright,
+.articleBody [data-sanitized-class*=alignright],
 .articleBody :is(img, iframe, video)[align=right i] {
   float: right;
   clear: right;
   margin-inline: var(--number-space-m) 0;
 }
-.articleBody :is(figure, .wp-caption):is([style*=float], [align=left i], [align=right i], .alignleft, .alignright) img {
+.articleBody :is(figure, .wp-caption):is([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) img {
   width: auto;
   max-width: 100%;
 }
-.articleBody > p:has(:is([style*=float], [align=left i], [align=right i], .alignleft, .alignright)) {
+.articleBody > p:has(:is([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright])) {
   display: flow-root;
   clear: both;
 }
