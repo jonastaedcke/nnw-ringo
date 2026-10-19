@@ -159,7 +159,7 @@ body {
 .article-header {
   padding-bottom: var(--number-space-m);
 }
-.article-header .nnwImageIcon {
+.article-header .nnw-image-icon {
   filter: grayscale(1);
   height: 0.85em;
   width: auto;
@@ -202,6 +202,9 @@ body {
   text-decoration: none;
 }
 
+.articleBody [hidden] {
+  display: none !important;
+}
 .articleBody h1,
 .articleBody h2,
 .articleBody h3,
@@ -306,51 +309,101 @@ body {
 .articleBody iframe {
   border-radius: var(--number-border-radius-l);
 }
-.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) {
   height: auto !important;
   width: 100vw !important;
 }
-.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]),
-.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]),
-.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]),
-.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
+.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]),
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]),
+.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]),
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) {
   display: block;
   box-sizing: border-box;
   height: auto;
   max-width: 100%;
 }
-.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]):not(figure *, .wp-caption *, video),
-.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]):not(figure *, .wp-caption *, video),
-.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]):not(figure *, .wp-caption *, video),
-.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]):not(figure *, .wp-caption *, video) {
+.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video),
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video),
+.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video),
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) {
   max-width: calc(100% + 2 * var(--number-space-l));
   margin-left: calc(-1 * var(--number-space-l)) !important;
   margin-right: calc(-1 * var(--number-space-l)) !important;
+  border-radius: clamp(0px, (100vw - (var(--number-width) + 2 * var(--number-space-l))) * 1000, var(--number-border-radius-l));
+}
+.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) img,
+.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) video,
+.articleBody img:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) iframe,
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) img,
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) video,
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) iframe,
+.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) img,
+.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) video,
+.articleBody audio:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) iframe,
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) img,
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) video,
+.articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]):not(figure *, .wp-caption *, :is(.bildkasten, [data-sanitized-class~=bildkasten]) *, video) iframe {
+  border-radius: clamp(0px, (100vw - (var(--number-width) + 2 * var(--number-space-l))) * 1000, var(--number-border-radius-l));
 }
 .articleBody figure,
-.articleBody .wp-caption {
+.articleBody .wp-caption,
+.articleBody .bildkasten, .articleBody [data-sanitized-class~=bildkasten] {
   margin-inline: 0;
   max-width: 100vw;
 }
-.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]),
-.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]),
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]),
+.articleBody .bildkasten:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]), .articleBody [data-sanitized-class~=bildkasten]:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) {
   margin-left: calc(-1 * var(--number-space-l)) !important;
   margin-right: calc(-1 * var(--number-space-l)) !important;
+  border-radius: clamp(0px, (100vw - (var(--number-width) + 2 * var(--number-space-l))) * 1000, var(--number-border-radius-l));
 }
-.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) figcaption,
-.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) .wp-caption-text,
-.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) figcaption,
-.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) .wp-caption-text {
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) img,
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) video,
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) iframe,
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) img,
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) video,
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) iframe,
+.articleBody .bildkasten:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) img,
+.articleBody .bildkasten:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) video,
+.articleBody .bildkasten:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) iframe, .articleBody [data-sanitized-class~=bildkasten]:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) img,
+.articleBody [data-sanitized-class~=bildkasten]:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) video,
+.articleBody [data-sanitized-class~=bildkasten]:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) iframe {
+  border-radius: clamp(0px, (100vw - (var(--number-width) + 2 * var(--number-space-l))) * 1000, var(--number-border-radius-l));
+}
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) figcaption,
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) .wp-caption-text,
+.articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) .bu, .articleBody figure:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) [data-sanitized-class~=bu],
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) figcaption,
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) .wp-caption-text,
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) .bu,
+.articleBody .wp-caption:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) [data-sanitized-class~=bu],
+.articleBody .bildkasten:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) figcaption,
+.articleBody .bildkasten:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) .wp-caption-text,
+.articleBody .bildkasten:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) .bu,
+.articleBody .bildkasten:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) [data-sanitized-class~=bu], .articleBody [data-sanitized-class~=bildkasten]:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) figcaption,
+.articleBody [data-sanitized-class~=bildkasten]:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) .wp-caption-text,
+.articleBody [data-sanitized-class~=bildkasten]:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) .bu, .articleBody [data-sanitized-class~=bildkasten]:not(figure *, .wp-caption *, .kg-bookmark-card, [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) [data-sanitized-class~=bu] {
   margin-left: var(--number-space-l);
   margin-right: var(--number-space-l);
 }
-.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
+.articleBody .bildkasten img + br:has(+ :is(.bu, [data-sanitized-class~=bu])), .articleBody [data-sanitized-class~=bildkasten] img + br:has(+ :is(.bu, [data-sanitized-class~=bu])) {
+  display: none;
+}
+.articleBody .bildkasten .bu, .articleBody .bildkasten [data-sanitized-class~=bu], .articleBody [data-sanitized-class~=bildkasten] .bu, .articleBody [data-sanitized-class~=bildkasten] [data-sanitized-class~=bu] {
+  display: block;
+}
+.articleBody figure:has(.enclosure-thumbnail, [data-sanitized-class~=enclosure-thumbnail]):has(+ figure) {
+  display: none;
+}
+.articleBody video:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) {
   width: auto;
   max-height: 80vh;
   margin-inline: auto;
 }
 .articleBody figcaption,
-.articleBody .wp-caption-text {
+.articleBody .wp-caption-text,
+.articleBody .bu, .articleBody [data-sanitized-class~=bu] {
   color: var(--color-dateline);
   font-size: var(--number-font-size-s);
   font-weight: var(--number-font-weight-semibold);
@@ -445,8 +498,8 @@ body {
   column-span: all;
 }
 
-.articleBody .alignleft,
-.articleBody .alignright,
+.articleBody .alignleft, .articleBody [data-sanitized-class~=alignleft], .articleBody .bildkastenlinks, .articleBody [data-sanitized-class~=bildkastenlinks],
+.articleBody .alignright, .articleBody [data-sanitized-class~=alignright], .articleBody .bildkastenrechts, .articleBody [data-sanitized-class~=bildkastenrechts],
 .articleBody :is(img, iframe, video)[align=left i],
 .articleBody :is(img, iframe, video)[align=right i],
 .articleBody :is(img, iframe, video, figure, .wp-caption)[style*=float] {
@@ -454,28 +507,26 @@ body {
   margin-block: 0 var(--number-space-s);
   max-width: 50%;
 }
-.articleBody :is(img, video, iframe):is([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) {
+.articleBody :is(img, video, iframe):is([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) {
   height: auto;
 }
-.articleBody .alignleft,
-.articleBody [data-sanitized-class*=alignleft],
+.articleBody .alignleft, .articleBody [data-sanitized-class~=alignleft], .articleBody .bildkastenlinks, .articleBody [data-sanitized-class~=bildkastenlinks],
 .articleBody :is(img, iframe, video)[align=left i] {
   float: left;
   clear: left;
   margin-inline: 0 var(--number-space-m);
 }
-.articleBody .alignright,
-.articleBody [data-sanitized-class*=alignright],
+.articleBody .alignright, .articleBody [data-sanitized-class~=alignright], .articleBody .bildkastenrechts, .articleBody [data-sanitized-class~=bildkastenrechts],
 .articleBody :is(img, iframe, video)[align=right i] {
   float: right;
   clear: right;
   margin-inline: var(--number-space-m) 0;
 }
-.articleBody :is(figure, .wp-caption):is([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright]) img {
+.articleBody :is(figure, .wp-caption, .bildkasten, [data-sanitized-class~=bildkasten]):is([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) img {
   width: auto;
   max-width: 100%;
 }
-.articleBody > p:has(:is([style*=float], [align=left i], [align=right i], .alignleft, .alignright, [data-sanitized-class*=alignleft], [data-sanitized-class*=alignright])) {
+.articleBody > p:has(:is([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts])) {
   display: flow-root;
   clear: both;
 }

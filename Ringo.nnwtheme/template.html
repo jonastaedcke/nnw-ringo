@@ -37,7 +37,7 @@ Presentation:
 <main>
   <article class="article [[text_size_class]]" data-nnw-theme="ringo">
     <header class="article-header">
-      <img class="nnwImageIcon" src="[[avatar_src]]" alt="Icon of [[byline]]" />
+      <img class="nnw-image-icon" src="[[avatar_src]]" alt="Icon of [[byline]]" />
       <time class="dateline [[dateline_style]]" datetime="[[datetime_long]]">
         [[date_long]] at [[time_short]]
       </time>
@@ -54,3 +54,15 @@ Presentation:
     </div>
   </article>
 </main>
+<script>
+  // Feeds pad their text with <p>&nbsp;</p>. Mark paragraphs that hold only
+  // whitespace (trim() includes the non-breaking space) and no element such as
+  // an image as hidden; the stylesheet hides them (_text.scss). Without Article
+  // JavaScript they stay, which costs only space.
+  // Wrapped in a function so nothing leaks into the page's global scope.
+  ;(() => {
+    for (const p of document.querySelectorAll('.articleBody p')) {
+      if (!p.firstElementChild && !p.textContent.trim()) p.hidden = true
+    }
+  })()
+</script>
