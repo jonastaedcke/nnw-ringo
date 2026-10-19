@@ -29,6 +29,15 @@ inspired by the article design of [Reeder Classic](https://www.reederapp.com/cla
   of breaking the page.
 - **System fonts.** Uses the San Francisco family; nothing is downloaded.
 
+### JavaScript
+
+Ringo works without JavaScript, but reads best with Article JavaScript turned
+on in NetNewsWire. A small script in the theme then adds:
+
+- **No empty spacers.** Hides the empty paragraphs (`<p>&nbsp;</p>`) that many
+  feeds use as spacers, so the text keeps an even rhythm. With JavaScript off,
+  these gaps stay in the article.
+
 ## Install
 
 [NetNewsWire Theme Marketplace](https://dave-atx.github.io/nnw-theme-marketplace/) · [Latest release](https://github.com/jonastaedcke/nnw-ringo/releases/latest)
