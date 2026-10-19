@@ -6,7 +6,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="screenshots/readme-dark.png">
-  <img alt="Ringo theme preview" src="screenshots/readme-light.png">
+  <img alt="Ringo on Mac and iPhone in light and dark mode" src="screenshots/readme-light.png">
 </picture>
 
 Ringo is a calm, focused reading theme for [NetNewsWire](https://netnewswire.com),
