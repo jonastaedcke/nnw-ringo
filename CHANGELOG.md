@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.4.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.4.0...v1.4.1) (2026-10-20)
+
+### Fixed
+
+* give embedded iframes a 16:9 height ([#2](https://github.com/jonastaedcke/nnw-ringo/issues/2))
+* hide a heading that repeats the article title at the start of the body
+* hide padding paragraphs that hold only empty inline elements
+* keep linked bylines in the accent color ([#1](https://github.com/jonastaedcke/nnw-ringo/issues/1))
+* remove the outer margins of blocks inside captions
+* round the corners of floated media
+* start the first block of nested article bodies flush with the header
+* use the feed title as the icon's alt text ([#1](https://github.com/jonastaedcke/nnw-ringo/issues/1))
+
+### Documentation
+
+* license the theme under Apache-2.0
+* show Ringo on Mac and iPhone in light and dark mode in the README
+
 ## [1.4.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.3.0...v1.4.0) (2026-10-19)
 
 ### Added

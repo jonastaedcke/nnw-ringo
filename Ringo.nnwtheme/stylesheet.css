@@ -31,7 +31,6 @@
   --number-font-size-script: 0.75em; /** sup and sub; em, so it follows the surrounding text. */
   --number-font-weight-bold: 700; /** Article title and headings in the article. */
   --number-font-weight-semibold: 600; /** Dateline, captions and bookmark card titles. */
-  --number-opacity-caption: 0.8;
   --number-width: 42rem; /** Maximum width of the article column. */
   --number-space-base: 0.5rem;
   --number-space-s: 0.5rem;
@@ -197,6 +196,7 @@ body {
   display: none;
 }
 .article-header .byline,
+.article-header .byline a,
 .article-header .feed {
   color: var(--color-accent);
   text-decoration: none;
@@ -244,11 +244,6 @@ body {
 .articleBody a {
   color: var(--color-accent);
   text-decoration: none;
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.14em;
-}
-.articleBody a:hover {
-  text-decoration-thickness: 0.13em;
 }
 .articleBody p,
 .articleBody ul,
@@ -298,6 +293,9 @@ body {
   background: transparent;
   padding: 0;
 }
+.articleBody :nth-child(1 of :not([hidden], [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts])):where(:not(.articleBody :not(:nth-child(1 of :not([hidden], [style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]))) *)) {
+  margin-block-start: 0;
+}
 
 .articleBody .wp-caption {
   width: unset !important;
@@ -305,11 +303,8 @@ body {
 .articleBody iframe {
   border: 0;
 }
-.articleBody video,
-.articleBody iframe {
-  border-radius: var(--number-border-radius-l);
-}
 .articleBody iframe:not([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) {
+  aspect-ratio: 16/9;
   height: auto !important;
   width: 100vw !important;
 }
@@ -408,6 +403,16 @@ body {
   font-size: var(--number-font-size-s);
   font-weight: var(--number-font-weight-semibold);
   margin-top: var(--number-space-s);
+}
+.articleBody figcaption :nth-child(1 of *):where(:not(:is(figcaption, .wp-caption-text, .bu, [data-sanitized-class~=bu]) :not(:nth-child(1 of *)) *)),
+.articleBody .wp-caption-text :nth-child(1 of *):where(:not(:is(figcaption, .wp-caption-text, .bu, [data-sanitized-class~=bu]) :not(:nth-child(1 of *)) *)),
+.articleBody .bu :nth-child(1 of *):where(:not(:is(figcaption, .wp-caption-text, .bu, [data-sanitized-class~=bu]) :not(:nth-child(1 of *)) *)), .articleBody [data-sanitized-class~=bu] :nth-child(1 of *):where(:not(:is(figcaption, .wp-caption-text, .bu, [data-sanitized-class~=bu]) :not(:nth-child(1 of *)) *)) {
+  margin-block-start: 0;
+}
+.articleBody figcaption :nth-last-child(1 of *):where(:not(:is(figcaption, .wp-caption-text, .bu, [data-sanitized-class~=bu]) :not(:nth-last-child(1 of *)) *)),
+.articleBody .wp-caption-text :nth-last-child(1 of *):where(:not(:is(figcaption, .wp-caption-text, .bu, [data-sanitized-class~=bu]) :not(:nth-last-child(1 of *)) *)),
+.articleBody .bu :nth-last-child(1 of *):where(:not(:is(figcaption, .wp-caption-text, .bu, [data-sanitized-class~=bu]) :not(:nth-last-child(1 of *)) *)), .articleBody [data-sanitized-class~=bu] :nth-last-child(1 of *):where(:not(:is(figcaption, .wp-caption-text, .bu, [data-sanitized-class~=bu]) :not(:nth-last-child(1 of *)) *)) {
+  margin-block-end: 0;
 }
 
 .articleBody .kg-bookmark-container {
@@ -509,6 +514,10 @@ body {
 }
 .articleBody :is(img, video, iframe):is([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) {
   height: auto;
+}
+.articleBody :is(img, video, iframe):is([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]),
+.articleBody :is([style*=float], [align=left i], [align=right i], .alignleft, [data-sanitized-class~=alignleft], .bildkastenlinks, [data-sanitized-class~=bildkastenlinks], .alignright, [data-sanitized-class~=alignright], .bildkastenrechts, [data-sanitized-class~=bildkastenrechts]) :is(img, video, iframe) {
+  border-radius: var(--number-border-radius-l);
 }
 .articleBody .alignleft, .articleBody [data-sanitized-class~=alignleft], .articleBody .bildkastenlinks, .articleBody [data-sanitized-class~=bildkastenlinks],
 .articleBody :is(img, iframe, video)[align=left i] {
