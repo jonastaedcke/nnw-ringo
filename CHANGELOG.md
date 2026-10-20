@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.4.2](https://github.com/jonastaedcke/nnw-ringo/compare/v1.4.1...v1.4.2) (2026-10-20)
+
+### Fixed
+
+* crop the feed icon to a square and color only the header links
+* draw horizontal rules in the code surface color
+* extend a details box like a figure and keep its media in it
+* hide line breaks between list items
+* quote the feed name in the icon's alt text and space the icon from the dateline
+* show the code surface color behind media until it loads
+
 ## [1.4.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.4.0...v1.4.1) (2026-10-20)
 
 ### Fixed

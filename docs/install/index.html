@@ -1,0 +1,103 @@
+<!doctype html>
+<!--
+  Adds Ringo to NetNewsWire: GitHub strips netnewswire: links from Markdown,
+  so release notes and the README link here instead. ?v=v1.4.1 adds that
+  release; without it, the latest one. Served by GitHub Pages from docs/ on
+  main (mirrored by scripts/mirror-github.sh).
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Add Ringo to NetNewsWire</title>
+    <style>
+      :root {
+        --canvas: #f7f6f4;
+        --text: #6f6f6e;
+        --heading: #4a4949;
+        --accent: #0066cc;
+        --on-accent: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --canvas: #1e1e1e;
+          --text: #bcbcbc;
+          --heading: #dddddd;
+          --accent: #0a84ff;
+          --on-accent: #000000;
+        }
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 0 16px;
+        box-sizing: border-box;
+        background: var(--canvas);
+        color: var(--text);
+        font:
+          17px/1.5 ui-sans-serif,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Helvetica Neue',
+          sans-serif;
+        text-align: center;
+      }
+      h1 {
+        color: var(--heading);
+        font-size: 1.6rem;
+        margin: 0 0 0.5rem;
+      }
+      p {
+        margin: 0 0 1.5rem;
+      }
+      a {
+        color: var(--accent);
+      }
+      .add {
+        display: inline-block;
+        padding: 0.6em 1.4em;
+        border-radius: 0.6em;
+        background: var(--accent);
+        color: var(--on-accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Add Ringo to NetNewsWire</h1>
+      <p>
+        NetNewsWire should open and ask to add
+        <span id="version">the latest version of</span>
+        Ringo.
+      </p>
+      <p>
+        <a
+          class="add"
+          id="add"
+          href="netnewswire://theme/add?url=https%3A%2F%2Fgithub.com%2Fjonastaedcke%2Fnnw-ringo%2Freleases%2Flatest%2Fdownload%2FRingo.nnwtheme.zip"
+        >
+          Add to NetNewsWire
+        </a>
+      </p>
+      <p><a href="https://github.com/jonastaedcke/nnw-ringo">Ringo on GitHub</a></p>
+    </main>
+    <script>
+      const repo = 'jonastaedcke/nnw-ringo'
+      const tag = new URLSearchParams(location.search).get('v')
+      const release = /^v\d+(\.\d+){0,2}$/.test(tag ?? '') ? `download/${tag}` : 'latest/download'
+      const zip = `https://github.com/${repo}/releases/${release}/Ringo.nnwtheme.zip`
+      const add = `netnewswire://theme/add?url=${encodeURIComponent(zip)}`
+
+      if (release !== 'latest/download')
+        document.getElementById('version').textContent = tag + ' of'
+      document.getElementById('add').href = add
+      // Some browsers open another app only after a click; the button stays for them.
+      location.href = add
+    </script>
+  </body>
+</html>
