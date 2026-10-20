@@ -37,7 +37,7 @@ Presentation:
 <main>
   <article class="article [[text_size_class]]" data-nnw-theme="ringo">
     <header class="article-header">
-      <img class="nnw-image-icon" src="[[avatar_src]]" alt="Icon of [[byline]]" />
+      <img class="nnw-image-icon" src="[[avatar_src]]" alt="Icon of [[feed_link_title]]" />
       <time class="dateline [[dateline_style]]" datetime="[[datetime_long]]">
         [[date_long]] at [[time_short]]
       </time>
@@ -55,14 +55,34 @@ Presentation:
   </article>
 </main>
 <script>
-  // Feeds pad their text with <p>&nbsp;</p>. Mark paragraphs that hold only
-  // whitespace (trim() includes the non-breaking space) and no element such as
-  // an image as hidden; the stylesheet hides them (_text.scss). Without Article
+  // Feeds pad their text with <p>&nbsp;</p>, <p><br></p> or <p><strong></strong></p>.
+  // Mark paragraphs that hold only whitespace (trim() includes the non-breaking
+  // space) and no media as hidden; empty inline elements such as <strong> or
+  // <br> do not count. The stylesheet hides them (_text.scss). Without Article
   // JavaScript they stay, which costs only space.
+  //
+  // Some feeds, such as lto.de, open the body with the article title again as a
+  // heading. Hide the first heading when no text comes before it and its letters
+  // and digits match the title's; spacing and punctuation split across spans may
+  // differ.
   // Wrapped in a function so nothing leaks into the page's global scope.
   ;(() => {
-    for (const p of document.querySelectorAll('.articleBody p')) {
-      if (!p.firstElementChild && !p.textContent.trim()) p.hidden = true
+    const body = document.querySelector('.articleBody')
+    if (!body) return
+
+    const media = 'img, picture, svg, video, audio, iframe, object, embed, canvas, input'
+    for (const p of body.querySelectorAll('p')) {
+      if (!p.textContent.trim() && !p.querySelector(media)) p.hidden = true
     }
+
+    const words = text => text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '')
+    const title = words(document.querySelector('.article-header h1')?.textContent ?? '')
+    const heading = body.querySelector('h1, h2, h3, h4, h5, h6')
+    if (!title || !heading) return
+
+    const before = document.createRange()
+    before.setStart(body, 0)
+    before.setEndBefore(heading)
+    if (!before.toString().trim() && words(heading.textContent) === title) heading.hidden = true
   })()
 </script>
