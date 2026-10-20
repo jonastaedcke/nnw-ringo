@@ -35,12 +35,15 @@ Ringo works without JavaScript, but reads best with Article JavaScript turned
 on in NetNewsWire. A small script in the theme then adds:
 
 - **No empty spacers.** Hides the empty paragraphs (`<p>&nbsp;</p>`) that many
-  feeds use as spacers, so the text keeps an even rhythm. With JavaScript off,
-  these gaps stay in the article.
+  feeds use as spacers, so the text keeps an even rhythm.
+- **No repeated title.** Hides a heading at the very start of the article
+  that repeats its title.
+
+With JavaScript off, these gaps and the repeated title stay in the article.
 
 ## Install
 
-[NetNewsWire Theme Marketplace](https://dave-atx.github.io/nnw-theme-marketplace/) · [Latest release](https://github.com/jonastaedcke/nnw-ringo/releases/latest)
+[Add to NetNewsWire](https://jonastaedcke.github.io/nnw-ringo/install/) · [NetNewsWire Theme Marketplace](https://dave-atx.github.io/nnw-theme-marketplace/#dejonastaedckethemesringo)
 
 To hear about new versions, subscribe to the
 [release feed](https://github.com/jonastaedcke/nnw-ringo/releases.atom) in
