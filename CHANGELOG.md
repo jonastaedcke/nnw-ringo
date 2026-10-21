@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.5.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.4.2...v1.5.0) (2026-10-21)
+
+### Added
+
+* add a copy button to code blocks
+
+### Fixed
+
+* restyle footnote popovers and markers
+
 ## [1.4.2](https://github.com/jonastaedcke/nnw-ringo/compare/v1.4.1...v1.4.2) (2026-10-20)
 
 ### Fixed
