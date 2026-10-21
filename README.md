@@ -34,12 +34,13 @@ inspired by the article design of [Reeder Classic](https://www.reederapp.com/cla
 Ringo works without JavaScript, but reads best with Article JavaScript turned
 on in NetNewsWire. A small script in the theme then adds:
 
-- **No empty spacers.** Hides the empty paragraphs (`<p>&nbsp;</p>`) that many
-  feeds use as spacers, so the text keeps an even rhythm.
-- **No repeated title.** Hides a heading at the very start of the article
-  that repeats its title.
+- **Cleaner articles.** Hides the empty paragraphs (`<p>&nbsp;</p>`) that many
+  feeds use as spacers, and a heading at the very start of the article that
+  repeats its title.
 - **Copy button.** Puts a button in the top right corner of every code block
   that copies the code to the clipboard.
+- **Date in your language.** Shows the publication date and time in your
+  browser language, even when NetNewsWire writes them in English.
 
 ## Install
 

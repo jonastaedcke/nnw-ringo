@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.6.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.5.0...v1.6.0) (2026-10-21)
+
+### Added
+
+* show the dateline in the browser language
+
+### Fixed
+
+* stop articles with wide images from scrolling sideways
+
 ## [1.5.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.4.2...v1.5.0) (2026-10-21)
 
 ### Added
