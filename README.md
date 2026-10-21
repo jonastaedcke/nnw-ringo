@@ -38,8 +38,8 @@ on in NetNewsWire. A small script in the theme then adds:
   feeds use as spacers, so the text keeps an even rhythm.
 - **No repeated title.** Hides a heading at the very start of the article
   that repeats its title.
-
-With JavaScript off, these gaps and the repeated title stay in the article.
+- **Copy button.** Puts a button in the top right corner of every code block
+  that copies the code to the clipboard.
 
 ## Install
 
