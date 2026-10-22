@@ -31,27 +31,42 @@ inspired by the article design of [Reeder Classic](https://www.reederapp.com/cla
 
 ### JavaScript
 
-Ringo works without JavaScript, but reads best with Article JavaScript turned
-on in NetNewsWire. A small script in the theme then adds:
+Turn on Article JavaScript in NetNewsWire for Ringo to apply all of its
+styles. Ringo stays readable without it, but some fixes need a
+small script, which then adds:
 
 - **Cleaner articles.** Hides the empty paragraphs (`<p>&nbsp;</p>`) that many
-  feeds use as spacers, and a heading at the very start of the article that
-  repeats its title.
+  feeds use as spacers and a heading at the very start of the article that
+  repeats its title, and keeps WordPress images that only state their width
+  from being squashed.
+- **Footnotes in place.** Opens the footnotes of common providers in a popover
+  next to their marker instead of jumping to the end of the article, and keeps
+  a marker on the same line as its word.
 - **Copy button.** Puts a button in the top right corner of every code block
   that copies the code to the clipboard.
-- **Date in your language.** Shows the publication date and time in your
-  browser language, even when NetNewsWire writes them in English.
+- **Date in your language.** Shows the publication date and time in your language.
+- **Theme settings.** The R logo in the article header opens the theme
+  settings, where you can check for updates. A dot on the logo tells you when
+  a new version is available. The update check connects to GitHub.
 
 ## Install
 
 [Add to NetNewsWire](https://jonastaedcke.github.io/nnw-ringo/install/) · [NetNewsWire Theme Marketplace](https://dave-atx.github.io/nnw-theme-marketplace/#dejonastaedckethemesringo)
 
-To hear about new versions, subscribe to the
+With Article JavaScript on, Ringo tells you about new versions itself (see
+above). You can also subscribe to the
 [release feed](https://github.com/jonastaedcke/nnw-ringo/releases.atom) in
 NetNewsWire. It announces updates; it does not install them.
 
-## Development
+## Credits
 
-Ringo's code is written with AI assistance. Every change is reviewed and
-tested before release, with renders of sample articles on Mac and iPhone in
-light and dark mode.
+- [Ember](https://github.com/dave-atx/ember-nnw-theme) by Dave Marquard: the
+  script that opens the footnotes of common providers as popovers is adapted
+  from its footnote adapter (Apache License 2.0).
+- [nnw-theme](https://github.com/dave-atx/nnw-theme) by Dave Marquard: the
+  tooling that checks, renders and packages the theme.
+- [Reeder Classic](https://www.reederapp.com/classic/): the inspiration for the
+  article design.
+- [Zhang liven](https://unsplash.com/@lvenfoto):
+  [“Misty blue mountains rise above calm water”](https://unsplash.com/photos/BiLh-YznD0I)
+  (Unsplash License).
