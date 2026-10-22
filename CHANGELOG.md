@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.7.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.6.0...v1.7.0) (2026-10-22)
+
+### Added
+
+* add theme settings with an update check
+* open footnotes of common providers as popovers
+* scale the text up on the iPad
+
+### Fixed
+
+* give footnote markers one size and seat and keep footnote popovers clear of the window edges
+* hide line breaks before and after blocks
+* hide the external link when the article has none
+* hide WordPress's teasers for other articles
+* inset Ghost galleries from the window edges
+* keep details boxes in the column
+* keep nested, borderless and code tables plain
+* keep the proportions of images sized by inline style or automatic sizes
+* keep WordPress emoji images in the line
+* never synthesize bold or italic
+* show video embeds from unknown hosts at 16:9 and keep the height of other embeds
+
 ## [1.6.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.5.0...v1.6.0) (2026-10-21)
 
 ### Added
