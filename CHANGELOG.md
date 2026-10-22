@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.8.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.7.0...v1.8.0) (2026-10-22)
+
+### Added
+
+* animate the theme settings in and out
+
+### Fixed
+
+* dim buttons only slightly, so filled ones keep their contrast
+* let Tab reach the theme settings' buttons and return focus on close
+
 ## [1.7.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.6.0...v1.7.0) (2026-10-22)
 
 ### Added
