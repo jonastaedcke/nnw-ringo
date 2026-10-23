@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.11.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.10.0...v1.11.0) (2026-10-23)
+
+### Added
+
+* highlight the syntax of code blocks
+* link the license and the latest release notes in the theme settings
+
+### Fixed
+
+* keep the popover below a footnote in the first paragraph
+
 ## [1.10.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.9.0...v1.10.0) (2026-10-23)
 
 ### Added
