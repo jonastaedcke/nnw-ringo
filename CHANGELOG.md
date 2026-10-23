@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.10.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.9.0...v1.10.0) (2026-10-23)
+
+### Added
+
+* fold toggle cards like a details box
+* link the release notes in the theme settings
+* set alerts and callout cards off like quotes
+
+### Fixed
+
+* keep images in footnotes and list items in the column
+* keep the line breaks before and after blocks
+* space wrapped tables like the blocks around them
+
 ## [1.9.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.8.0...v1.9.0) (2026-10-23)
 
 ### Added
