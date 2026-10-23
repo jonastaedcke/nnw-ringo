@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.11.0...v1.11.1) (2026-10-23)
+
+### Fixed
+
+* color code blocks that a feed split into unstyled spans
+* limit code snippet embeds to 80% of the window height
+
 ## [1.11.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.10.0...v1.11.0) (2026-10-23)
 
 ### Added
