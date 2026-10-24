@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.12.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.11.1...v1.12.0) (2026-10-24)
+
+### Added
+
+* give the code header the code's color, set off by a line
+* blend image and video backgrounds close to the page's into the page, except while pointed at
+* hide line breaks next to blocks that are already spaced
+
+### Fixed
+
+* wrap loose text between two line breaks in paragraphs
+
 ## [1.11.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.11.0...v1.11.1) (2026-10-23)
 
 ### Fixed
