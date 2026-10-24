@@ -32,8 +32,8 @@ styles. Ringo stays readable without it.
 
 - **Theme settings.** The R logo in the article header opens the theme
   settings and shows a dot when GitHub has a new version.
-- **Cleaner articles.** Hides empty spacer paragraphs and a leading heading
-  that repeats the title, and keeps images from being squashed.
+- **Cleaner articles.** Hides empty spacer paragraphs and a repeated title,
+  and keeps images from being squashed.
 - **Footnotes in place.** Opens the footnotes of common providers in a popover
   next to their marker instead of jumping to the end of the article.
 - **Better code blocks.** Colors the code by its language and adds a button
