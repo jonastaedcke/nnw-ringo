@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.12.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.12.0...v1.12.1) (2026-10-25)
+
+### Documentation
+
+* add an [overview page](https://jonastaedcke.github.io/nnw-ringo/) with a live preview on Mac and iPhone, the features, the latest version and answers to common questions
+* link the overview page from the README and the theme settings
+* save the README images as WebP
+
 ## [1.12.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.11.1...v1.12.0) (2026-10-24)
 
 ### Added
