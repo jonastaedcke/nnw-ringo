@@ -1,12 +1,419 @@
 <!doctype html>
-<!-- The site holds only install/; its root leads to the repository. -->
+<!--
+  Ringo's overview page, served by GitHub Pages from docs/ on main (mirrored by
+  scripts/mirror-github.sh). Styles: src/site.scss, built into site.css by
+  `npm run build:site` (not committed). The preview pages in preview/ and
+  the images in images/ are rendered by scripts/site.sh (`npm run site`).
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=https://github.com/jonastaedcke/nnw-ringo" />
-    <title>Ringo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Ringo for NetNewsWire</title>
+    <meta
+      name="description"
+      content="Ringo is a calm, focused reading theme for NetNewsWire on Mac, iPhone and iPad."
+    />
+    <link rel="stylesheet" href="site.css" />
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.data-backbone.de/js/pa-2ZZtpKwsGLqpC1cbNe5yR.js"></script>
+    <script>
+      window.plausible =
+        window.plausible ||
+        function () {
+          ;(plausible.q = plausible.q || []).push(arguments)
+        }
+      plausible.init =
+        plausible.init ||
+        function (i) {
+          plausible.o = i || {}
+        }
+      plausible.init()
+    </script>
   </head>
   <body>
-    <a href="https://github.com/jonastaedcke/nnw-ringo">Ringo on GitHub</a>
+    <header class="intro">
+      <div class="logo" aria-hidden="true">R</div>
+      <h1>Ringo</h1>
+      <p class="lead">A calm, focused reading theme for NetNewsWire on Mac, iPhone and iPad.</p>
+      <p class="actions">
+        <a
+          class="add"
+          href="netnewswire://theme/add?url=https%3A%2F%2Fgithub.com%2Fjonastaedcke%2Fnnw-ringo%2Freleases%2Flatest%2Fdownload%2FRingo.nnwtheme.zip"
+        >
+          Add to NetNewsWire
+        </a>
+        <a href="https://github.com/jonastaedcke/nnw-ringo">Ringo on GitHub</a>
+      </p>
+      <!-- prettier-ignore -->
+      <p class="version">v1.12.0 (<a href="https://github.com/jonastaedcke/nnw-ringo/releases/tag/v1.12.0">Changelog</a>)</p>
+    </header>
+
+    <div class="stage">
+      <div class="device">
+        <div class="window">
+          <div class="titlebar" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <div class="screen">
+            <iframe title="An article in Ringo"></iframe>
+          </div>
+        </div>
+        <button type="button" class="handle" aria-label="Resize the preview"></button>
+        <button type="button" class="handle" aria-label="Resize the preview"></button>
+      </div>
+    </div>
+
+    <main class="features">
+      <h2>Made for reading</h2>
+      <ul class="grid">
+        <li class="feature">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="images/wide-images-dark.webp" />
+            <img
+              src="images/wide-images-light.webp"
+              alt="A photo running from edge to edge on iPhone"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Images across the full width</h3>
+          <p>
+            Photos and figures break out of the text column: into the margins on the Mac, from edge
+            to edge on iPhone.
+          </p>
+        </li>
+        <li class="feature">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="images/footnotes-dark.webp" />
+            <img
+              src="images/footnotes-light.webp"
+              alt="A footnote open in a popover below its marker"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Footnotes in place</h3>
+          <p>
+            Footnotes from common blogs and newsletters open in a popover next to their marker
+            instead of jumping to the end of the article.
+          </p>
+        </li>
+        <li class="feature">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="images/update-dark.webp" />
+            <img
+              src="images/update-light.webp"
+              alt="The R logo in the article header with a blue dot"
+              loading="lazy"
+            />
+          </picture>
+          <h3>A blue dot for updates</h3>
+          <p>
+            When a new version of the Ringo theme is out, a blue dot appears on the R in the article header.
+            Its settings install the update.
+          </p>
+        </li>
+        <li class="feature">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="images/code-dark.webp" />
+            <img
+              src="images/code-light.webp"
+              alt="A colored Swift code block with a language menu and a Copy button"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Colored code</h3>
+          <p>
+            Code blocks are colored by their language, with a menu to pick another one and a button
+            that copies the code.
+          </p>
+        </li>
+        <li class="feature">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="images/native-text-dark.webp" />
+            <img
+              src="images/native-text-light.webp"
+              alt="An article title and its first paragraph in the system font"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Native fonts and colors</h3>
+          <p>
+            San Francisco in the text size you chose, in colors that follow light and dark mode and
+            meet the WCAG contrast ratio.
+          </p>
+        </li>
+        <li class="feature">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="images/videos-dark.webp" />
+            <img
+              src="images/videos-light.webp"
+              alt="An embedded video filling the column at 16:9"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Embedded videos</h3>
+          <p>
+            YouTube, Vimeo and other players fill the column at 16:9 instead of keeping a small
+            fixed size.
+          </p>
+        </li>
+      </ul>
+    </main>
+
+    <section class="faq">
+      <h2>Questions</h2>
+      <details>
+        <summary>How do I install the Ringo theme?</summary>
+        <p>
+          With
+          <a
+            href="netnewswire://theme/add?url=https%3A%2F%2Fgithub.com%2Fjonastaedcke%2Fnnw-ringo%2Freleases%2Flatest%2Fdownload%2FRingo.nnwtheme.zip"
+            >Add to NetNewsWire</a
+          >
+          on this page, or from the
+          <a href="https://dave-atx.github.io/nnw-theme-marketplace/#dejonastaedckethemesringo"
+            >NetNewsWire Theme Marketplace</a
+          >:
+        </p>
+        <ol>
+          <li>
+            On the Mac, iPhone or iPad with NetNewsWire, choose <b>Add to NetNewsWire</b> and let
+            your browser open NetNewsWire.
+          </li>
+          <li>
+            NetNewsWire asks <b>Install theme?</b> with the theme’s name and author: choose
+            <b>Install Theme</b>.
+          </li>
+          <li>
+            Installing keeps your current theme, so pick the Ringo theme: on the Mac in
+            <b>Settings → General → Article Theme</b>, on iPhone and iPad in
+            <b>Settings → Articles → Theme</b>.
+          </li>
+        </ol>
+        <p>
+          Updates come through the theme itself: a <b>blue dot</b> on the R in the article header
+          shows a new version, and its settings install it.
+        </p>
+      </details>
+      <details>
+        <summary>Does the Ringo theme need JavaScript?</summary>
+        <p>
+          No, the Ringo theme stays readable without it. But only with <b>Article JavaScript</b> on in
+          NetNewsWire does the theme check for new versions on GitHub, and tidy up articles for calm reading:
+          it hides empty paragraphs and repeated titles, opens footnotes in place, colors code
+          and shows the date in your language.
+        </p>
+      </details>
+      <details>
+        <summary>Where can I report a problem, suggest a feature or ask a question?</summary>
+        <p>
+          Open an
+          <a href="https://github.com/jonastaedcke/nnw-ringo/issues/new/choose">issue on GitHub</a>
+          or write in the
+          <a href="https://discourse.netnewswire.com/t/new-theme-ringo/438">NetNewsWire forum</a>.
+          Ideas for new features and questions are welcome in
+          <a href="https://github.com/jonastaedcke/nnw-ringo/discussions">GitHub Discussions</a>.
+        </p>
+      </details>
+      <details>
+        <summary>Is the Ringo theme free?</summary>
+        <p>
+          Yes. Like <a href="https://netnewswire.com">NetNewsWire</a>, the Ringo theme is free to download
+          and use. Please mind its
+          <a href="https://github.com/jonastaedcke/nnw-ringo/blob/main/LICENSE">license</a>, the
+          <b>Apache License 2.0</b>.
+        </p>
+      </details>
+    </section>
+
+    <footer>
+      <p>
+        <a
+          href="netnewswire://theme/add?url=https%3A%2F%2Fgithub.com%2Fjonastaedcke%2Fnnw-ringo%2Freleases%2Flatest%2Fdownload%2FRingo.nnwtheme.zip"
+        >
+          Add to NetNewsWire
+        </a>
+        ·
+        <button type="button" class="privacy-toggle" aria-expanded="false" aria-controls="privacy">
+          Privacy
+        </button>
+        ·
+        <a href="https://github.com/jonastaedcke/nnw-ringo">GitHub</a>
+        ·
+        <a href="https://github.com/jonastaedcke/nnw-ringo/blob/main/LICENSE">License</a>
+      </p>
+      <section id="privacy" class="privacy" hidden>
+        <h2>Website Analytics</h2>
+        <p>
+          To gain a more detailed understanding of the usage and activity on this website, the site
+          operator uses Plausible Analytics. The site operator hosts the
+          Plausible&#8209;Analytics&#8209;platform on their own infrastructure, which means the site
+          operator retains full ownership and control, and all collected data remains on their own
+          servers. No data is shared with third parties. Plausible collects data anonymously and in
+          aggregated form. The system is privacy&#8209;focused and does not use cookies, does not
+          store IP&#8209;addresses, and does not collect personal data, persistent identifiers, or
+          cross&#8209;site tracking data.
+        </p>
+        <p>
+          The data collected and processed by the site operator for analytics purposes includes:
+        </p>
+        <ul>
+          <li>Information about the browser, network, and device of the person concerned</li>
+          <li>Websites visited by the person concerned prior to visiting this website</li>
+          <li>Websites visited by the person concerned on this website</li>
+          <li>
+            Approximate country/region (derived from the IP&#8209;address of the person concerned,
+            which is discarded immediately and never stored)
+          </li>
+        </ul>
+      </section>
+      <!-- prettier-ignore -->
+      <p>
+        Photo by <a href="https://unsplash.com/@lvenfoto">Zhang liven</a> on
+        <a href="https://unsplash.com/photos/BiLh-YznD0I">Unsplash</a>.
+      </p>
+      <p>
+        <a href="https://taedc.ke/?utm_source=nnw-ringo&amp;utm_medium=website&amp;utm_campaign=overview">taedc.ke</a>
+      </p>
+      <p>
+        Mac, iPhone and iPad are trademarks of Apple Inc.,<br />
+        registered in the U.S. and other countries.
+      </p>
+      <div class="signature" aria-hidden="true">Ringo</div>
+    </footer>
+
+    <script>
+      // --progress (src/site.scss): 0 at the top of the page, 1 once the
+      // device's top has reached the upper sixth of the screen. Only then does
+      // the preview take the pointer: before, a scroll over it would scroll
+      // the article instead of the page, and the device would stay tilted.
+      const stage = document.querySelector('.stage')
+      const device = stage.querySelector('.device')
+      const iframe = device.querySelector('iframe')
+      const root = document.documentElement.style
+      let frame = 0
+      function setProgress() {
+        frame = 0
+        // Whole pixels, as scrollY can be: otherwise it may stop just short.
+        const distance = Math.max(1, Math.floor(stage.offsetTop - innerHeight / 6))
+        const progress = Math.min(1, Math.max(0, scrollY / distance))
+        root.setProperty('--progress', progress.toFixed(4))
+        stage.toggleAttribute('data-upright', progress === 1)
+      }
+      addEventListener('scroll', () => (frame ||= requestAnimationFrame(setProgress)), {
+        passive: true,
+      })
+
+      // The handles make the window narrower or wider about its center, as
+      // far as the stage allows. Narrower than SWITCH_WIDTH, it turns into an
+      // iPhone showing the theme's iPhone page; a phone shows only that.
+      const PREVIEW = { mac: 'preview/ringo-mac.html', phone: 'preview/ringo-iphone.html' }
+      const ATTRIBUTE = {
+        DEVICE: 'data-device',
+        RESIZING: 'data-resizing',
+        SNAPPING: 'data-snapping',
+        BLOCKED: 'data-blocked',
+      }
+      const SWITCH_WIDTH = 640
+      const PHONE_WIDTH = 380
+      const KEY_STEP = 48
+      // The device's transition in src/site.scss ($morph).
+      const MORPH_MS = 400
+      const mobile = matchMedia('(max-width: 600px)')
+      let width = Infinity
+      let snapping = 0
+
+      // The width set last, not the device's while it eases into the iPhone.
+      const currentWidth = () => Math.min(width, device.offsetWidth)
+      const maxWidth = () => stage.clientWidth - parseFloat(getComputedStyle(stage).paddingLeft) * 2
+
+      function setDevice(name) {
+        if (device.getAttribute(ATTRIBUTE.DEVICE) === name) {
+          return
+        }
+        device.setAttribute(ATTRIBUTE.DEVICE, name)
+        loaded = false
+        iframe.src = PREVIEW[name]
+        checkLoaded(BLOCKED_AFTER_MS)
+        device.setAttribute(ATTRIBUTE.SNAPPING, '')
+        clearTimeout(snapping)
+        snapping = setTimeout(() => device.removeAttribute(ATTRIBUTE.SNAPPING), MORPH_MS)
+      }
+
+      function setWidth(next) {
+        width = Math.min(Math.max(next, PHONE_WIDTH), maxWidth())
+        device.style.setProperty('--width', `${width}px`)
+        setDevice(mobile.matches || width < SWITCH_WIDTH ? 'phone' : 'mac')
+      }
+
+      for (const handle of device.querySelectorAll('.handle')) {
+        let start = null
+        handle.addEventListener('pointerdown', event => {
+          const box = stage.getBoundingClientRect()
+          const center = box.left + box.width / 2
+          start = { center, half: Math.abs(event.clientX - center), width: currentWidth() }
+          handle.setPointerCapture(event.pointerId)
+          stage.setAttribute(ATTRIBUTE.RESIZING, '')
+        })
+        handle.addEventListener('pointermove', event => {
+          if (start) {
+            setWidth(start.width + 2 * (Math.abs(event.clientX - start.center) - start.half))
+          }
+        })
+        handle.addEventListener('lostpointercapture', () => {
+          start = null
+          stage.removeAttribute(ATTRIBUTE.RESIZING)
+        })
+        handle.addEventListener('keydown', event => {
+          const step = { ArrowLeft: -KEY_STEP, ArrowRight: KEY_STEP }[event.key]
+          if (step) {
+            event.preventDefault()
+            setWidth(Math.min(width, maxWidth()) + step)
+          }
+        })
+      }
+
+      // A browser that blocks the preview loads an error page into the iframe:
+      // then the screenshot behind it shows instead (src/site.scss). The
+      // preview pages say when they load (scripts/site.sh), which works from
+      // any origin, also file://; a load without that message is blocked, and
+      // so is one that takes longer than BLOCKED_AFTER_MS (WebKit fires no
+      // load event for a blocked iframe).
+      const LOADED_MESSAGE = 'ringo-preview'
+      const LOADED_WAIT_MS = 500
+      const BLOCKED_AFTER_MS = 4000
+      let loaded = false
+      let blockedCheck = 0
+      const checkLoaded = delay => {
+        clearTimeout(blockedCheck)
+        blockedCheck = setTimeout(() => device.toggleAttribute(ATTRIBUTE.BLOCKED, !loaded), delay)
+      }
+      addEventListener('message', event => {
+        if (event.source === iframe.contentWindow && event.data === LOADED_MESSAGE) {
+          loaded = true
+          device.removeAttribute(ATTRIBUTE.BLOCKED)
+        }
+      })
+      iframe.addEventListener('load', () => checkLoaded(LOADED_WAIT_MS))
+
+      addEventListener('resize', () => {
+        setProgress()
+        setWidth(width)
+      })
+      setProgress()
+      setWidth(width)
+
+      // The privacy button in the footer shows and hides the privacy notice
+      // below it.
+      const privacyToggle = document.querySelector('.privacy-toggle')
+      const privacy = document.getElementById(privacyToggle.getAttribute('aria-controls'))
+      privacyToggle.addEventListener('click', () => {
+        privacy.hidden = !privacy.hidden
+        privacyToggle.setAttribute('aria-expanded', String(!privacy.hidden))
+      })
+    </script>
   </body>
 </html>

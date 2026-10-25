@@ -5,12 +5,14 @@
 <!-- nnw-theme-identity:end -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="screenshots/readme-dark.png">
-  <img alt="Ringo on Mac and iPhone in light and dark mode" src="screenshots/readme-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="screenshots/readme-dark.webp">
+  <img alt="Ringo on Mac and iPhone in light and dark mode" src="screenshots/readme-light.webp">
 </picture>
 
 Ringo is a calm, focused reading theme for [NetNewsWire](https://netnewswire.com),
 inspired by the article design of [Reeder Classic](https://www.reederapp.com/classic/).
+See it in a live preview on its
+[website](https://jonastaedcke.github.io/nnw-ringo/?utm_source=nnw-ringo&utm_medium=readme&utm_campaign=introduction).
 
 ## Highlights
 
