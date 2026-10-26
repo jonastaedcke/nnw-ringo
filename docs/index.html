@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
   Ringo's overview page, served by GitHub Pages from docs/ on main (mirrored by
-  scripts/mirror-github.sh). Styles: src/site.scss, built into site.css by
+  scripts/mirror-github.sh). Styles: src/sites/site.scss, built into site.css by
   `npm run build:site` (not committed). The preview pages in preview/ and
   the images in images/ are rendered by scripts/site.sh (`npm run site`).
 -->
@@ -286,7 +286,7 @@
     </footer>
 
     <script>
-      // --progress (src/site.scss): 0 at the top of the page, 1 once the
+      // --progress (src/sites/site.scss): 0 at the top of the page, 1 once the
       // device's top has reached the upper sixth of the screen. Only then does
       // the preview take the pointer: before, a scroll over it would scroll
       // the article instead of the page, and the device would stay tilted.
@@ -320,7 +320,7 @@
       const SWITCH_WIDTH = 640
       const PHONE_WIDTH = 380
       const KEY_STEP = 48
-      // The device's transition in src/site.scss ($morph).
+      // The device's transition in src/sites/site.scss ($morph).
       const MORPH_MS = 400
       const mobile = matchMedia('(max-width: 600px)')
       let width = Infinity
@@ -377,7 +377,7 @@
       }
 
       // A browser that blocks the preview loads an error page into the iframe:
-      // then the screenshot behind it shows instead (src/site.scss). The
+      // then the screenshot behind it shows instead (src/sites/site.scss). The
       // preview pages say when they load (scripts/site.sh), which works from
       // any origin, also file://; a load without that message is blocked, and
       // so is one that takes longer than BLOCKED_AFTER_MS (WebKit fires no
