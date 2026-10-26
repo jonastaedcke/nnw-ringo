@@ -13,7 +13,7 @@
   Ringo is a calm, focused reading theme for <a href="https://netnewswire.com">NetNewsWire</a>,
   inspired by the article design of <a href="https://www.reederapp.com/classic/">Reeder Classic</a>.<br>
   See it in a live preview on its
-  <a href="https://jonastaedcke.github.io/nnw-ringo/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=introduction">website</a>.
+  <a href="https://nnw-ringo.jonastaedcke.de/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=introduction">website</a>.
 </p>
 
 ## Highlights

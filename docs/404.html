@@ -1,0 +1,20 @@
+<!doctype html>
+<!--
+  GitHub Pages serves this page for any path it lacks: the overview page's
+  former files (images/, preview/) moved to its own domain, so send the same
+  path there (see index.html).
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ringo for NetNewsWire</title>
+    <meta http-equiv="refresh" content="0; url=https://nnw-ringo.jonastaedcke.de/" />
+    <script>
+      const path = location.pathname.replace(/^\/nnw-ringo\//, '')
+      location.replace(`https://nnw-ringo.jonastaedcke.de/${path}${location.search}${location.hash}`)
+    </script>
+  </head>
+  <body>
+    <p>Ringo’s website moved to <a href="https://nnw-ringo.jonastaedcke.de/">nnw-ringo.jonastaedcke.de</a>.</p>
+  </body>
+</html>
