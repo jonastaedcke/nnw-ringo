@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.13.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.12.1...v1.13.0) (2026-10-26)
+
+### Added
+
+* show YouTube Shorts in portrait
+
+### Fixed
+
+* run CodePen's click-to-run embeds in the article
+
+### Documentation
+
+* move the website to nnw-ringo.jonastaedcke.de
+
 ## [1.12.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.12.0...v1.12.1) (2026-10-25)
 
 ### Documentation
