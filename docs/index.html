@@ -17,8 +17,8 @@
     />
     <link rel="canonical" href="https://nnw-ringo.jonastaedcke.de/" />
     <link rel="stylesheet" href="site.css" />
-    <!-- Privacy-friendly analytics by Plausible -->
-    <script async src="https://plausible.data-backbone.de/js/pa-2ZZtpKwsGLqpC1cbNe5yR.js"></script>
+    <!-- Privacy-friendly analytics by Plausible, through this site's server (nginx/default.conf) -->
+    <script async src="/js/script.js"></script>
     <script>
       window.plausible =
         window.plausible ||
@@ -30,7 +30,7 @@
         function (i) {
           plausible.o = i || {}
         }
-      plausible.init()
+      plausible.init({ endpoint: '/api/event' })
     </script>
   </head>
   <body>
