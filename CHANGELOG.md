@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.13.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.13.0...v1.13.1) (2026-10-27)
+
+### Fixed
+
+* keep a table in a figure in the column
+* keep links from staying highlighted after a tap on touch screens
+* keep quick taps on buttons from zooming the article on iOS
+* shorten the lines on the iPad
+* show the article on the iPad at the reader's Dynamic Type size
+* square the corners of media that nearly reach the window edges
+
 ## [1.13.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.12.1...v1.13.0) (2026-10-26)
 
 ### Added
