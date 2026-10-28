@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.14.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.13.1...v1.14.0) (2026-10-28)
+
+### Added
+
+* send an article by email from the theme settings
+* rework the theme settings behind the R in the article header
+* dim the page behind an open footnote popover
+* set the notes at the end of an article on a darker ground
+* show a linked image's original in its place
+
+### Fixed
+
+* hide a line break that opens a paragraph inside an emphasis
+* keep an open footnote popover from scrolling the page sideways
+
 ## [1.13.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.13.0...v1.13.1) (2026-10-27)
 
 ### Fixed
