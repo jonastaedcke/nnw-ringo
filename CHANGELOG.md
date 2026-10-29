@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.15.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.14.0...v1.15.0) (2026-10-29)
+
+### Added
+
+* put a code block's language menu at the start of its header
+* set a title's lead before its first colon, dash or bracketed label above it
+* show the dateline as a relative date and switch to the full date on click
+
+### Fixed
+
+* color code blocks whose code sits in a span of its own
+* keep images blended into the page after a tap
+* leave out the empty title of a post without one
+* let screen readers announce the relative and the full date
+* recognize WordPress captions and galleries whose classes NetNewsWire moved
+* set every heading at one line height
+
 ## [1.14.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.13.1...v1.14.0) (2026-10-28)
 
 ### Added
