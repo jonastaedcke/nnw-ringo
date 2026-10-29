@@ -65,6 +65,11 @@
       .update p {
         margin: 0;
       }
+      p.note {
+        max-width: 30em;
+        margin: 1.5rem auto 0;
+        font-size: 0.85rem;
+      }
       .add {
         display: inline-block;
         padding: 0.6em 1.4em;
@@ -94,6 +99,10 @@
         </a>
       </p>
       <p class="intro"><a href="https://github.com/jonastaedcke/nnw-ringo">Ringo on GitHub</a></p>
+      <p class="note" id="note">
+        If the update fails in NetNewsWire’s in-app browser, open this page in Safari or another
+        browser outside NetNewsWire, then close the in-app browser and try again.
+      </p>
     </main>
     <script>
       const repo = 'jonastaedcke/nnw-ringo'
@@ -115,6 +124,9 @@
         document.getElementById('add').textContent = german
           ? `Auf${version || ' die neueste Version'} aktualisieren`
           : `Update to${version || ' the latest version'}`
+        if (german)
+          document.getElementById('note').textContent =
+            'Schlägt das Update im In-App-Browser von NetNewsWire fehl, öffne diese Seite in Safari oder einem anderen Browser außerhalb von NetNewsWire, schließe dann den In-App-Browser und versuche es erneut.'
       }
 
       // Some browsers open another app only after a click; the button stays for them.
