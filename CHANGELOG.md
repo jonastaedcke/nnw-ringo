@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.16.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.15.0...v1.16.0) (2026-11-01)
+
+### Added
+
+* show a GitHub bot's "[bot]" suffix in the byline as a label
+* underline links that lead to other sites
+
+### Fixed
+
+* center embedded X, Bluesky and Mastodon posts and extend them like other media
+* extend a video in the text like an image and round its corners
+* find the footnotes of an article without a link of its own
+* hide more icons whose drawing the sanitizer stripped
+* indent a quote in a figure like any other quote
+* keep images marked inline in the line at the size of the text
+* keep paragraphs in a table cell from widening its padding
+* leave out the line under a table's last row
+* lighten the notes at the end in dark mode instead of darkening them
+* show a bookmark card's thumbnail beside its text
+* show more feeds' image captions as captions and their images at full size
+
 ## [1.15.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.14.0...v1.15.0) (2026-10-29)
 
 ### Added
