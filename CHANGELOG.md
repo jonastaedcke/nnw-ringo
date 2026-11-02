@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.16.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.16.0...v1.16.1) (2026-11-02)
+
+### Fixed
+
+* drop the empty line after an embedded post
+* keep an image with its own inline margin centered in the column
+* show an embedded Mastodon post at its full height
+
 ## [1.16.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.15.0...v1.16.0) (2026-11-01)
 
 ### Added
