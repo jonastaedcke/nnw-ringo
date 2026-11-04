@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.17.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.16.1...v1.17.0) (2026-11-04)
+
+### Added
+
+* give cards and folding boxes as much room above as beside their content
+* set Ghost's call to action with an image and its button card as cards in the column, the button lighting up like a bookmark
+* show NetNewsWire's podcast players and media enclosures in the article's style, at its top in a card like a bookmark's
+
+### Fixed
+
+* drop the extra space above an article that opens with an empty site widget
+* keep images in table cells from shrinking to nothing on a phone and narrow the gaps between columns ([#3](https://github.com/jonastaedcke/nnw-ringo/issues/3))
+* underline text the way links are underlined
+
 ## [1.16.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.16.0...v1.16.1) (2026-11-02)
 
 ### Fixed
