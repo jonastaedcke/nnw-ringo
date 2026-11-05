@@ -13,13 +13,13 @@
   Ringo is a calm, focused reading theme for <a href="https://netnewswire.com">NetNewsWire</a>,
   inspired by the article design of <a href="https://www.reederapp.com/classic/">Reeder Classic</a>.<br>
   See it in a live preview on its
-  <a href="https://nnw-ringo.jonastaedcke.de/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=introduction">website</a>.
+  <a href="https://ringo-the.me/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=introduction">website</a>.
 </p>
 
 ## Highlights
 
-- **Large images, calm layout.** Images extend into the margins, and wide
-  tables and code blocks scroll instead of breaking the page.
+- **Large images, calm layout.** Images extend into the margins, wide tables
+  and code blocks scroll, and bookmarks and callouts become cards.
 - **Light and dark.** Follows the system appearance on Mac, iPhone and iPad.
   All text colors meet the WCAG AA contrast ratio, and AAA when Increase
   Contrast is turned on.
@@ -28,21 +28,30 @@
 - **Comfortable line length.** The article sits in a narrow column that grows
   with the text size, and headlines wrap into balanced lines.
 - **System fonts.** Uses the San Francisco family; nothing is downloaded.
+- **Videos that fit.** Embedded videos fill the column at 16:9, and short
+  videos stand in portrait.
+- **Underlined external links.** Links to other sites are underlined, so you
+  see at a glance when a link takes you away from the article’s site.
+- **Podcasts and attachments.** Players and attached files appear in the
+  article’s style.
 
 ### JavaScript
 
 Turn on Article JavaScript in NetNewsWire for Ringo to apply all of its
 styles. Ringo stays readable without it.
 
-- **Theme settings.** The R logo in the article header opens the theme
-  settings and shows a dot when GitHub has a new version.
+- **Theme settings.** The theme logo in the article header opens the theme
+  settings and shows a dot when GitHub has a new version, which they install.
 - **Cleaner articles.** Hides empty spacer paragraphs and a repeated title,
   and keeps images from being squashed.
+- **Share by email.** The theme settings send the article by email, readable
+  in any mail app.
 - **Footnotes in place.** Opens the footnotes of common providers in a popover
   next to their marker instead of jumping to the end of the article.
-- **Better code blocks.** Colors the code by its language and adds a button
-  that copies it to the clipboard.
-- **Date in your language.** Shows the publication date and time in your language.
+- **Better code blocks.** Colors the code by its language, with a menu to pick
+  another one and a button that copies it to the clipboard.
+- **Date in your language.** Shows how long ago an article came out, in your
+  language; a click shows the full date and time.
 
 ## Install
 
