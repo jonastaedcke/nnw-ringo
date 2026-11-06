@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.18.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.17.0...v1.18.0) (2026-11-06)
+
+### Added
+
+* list a byline's authors as a sentence, fold more than three and link each name to their email address
+* show footnote markers as bold numbers that join their open popover, and scroll smoothly from a note back to its marker
+* show NetNewsWire's podcast players and media enclosures at the end of the article
+* show the title's kicker at a smaller size
+
+### Fixed
+
+* drop links from images to their own file
+* hide a byline that only repeats the feed's name
+* open each footnote marker's own note instead of the first
+* open footnotes written as plain text, such as "[1]", as popovers and list them numbered with return links
+* show an embedded Mastodon post once and at its own height, also when it is shorter than a video
+
+### Documentation
+
+* move the website to [ringo-the.me](https://ringo-the.me/)
+
 ## [1.17.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.16.1...v1.17.0) (2026-11-04)
 
 ### Added
