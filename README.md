@@ -65,8 +65,8 @@ NetNewsWire to hear about updates.
 ## Credits
 
 - [Ember](https://github.com/dave-atx/ember-nnw-theme) by Dave Marquard: the
-  script that opens the footnotes of common providers as popovers is adapted
-  from its footnote adapter (Apache License 2.0).
+  script that opens the footnotes of common providers as popovers builds on
+  its footnote adapter (Apache License 2.0).
 - [highlight.js](https://highlightjs.org) by Ivan Sagalaev and contributors:
   the syntax highlighting of code blocks (BSD 3-Clause License).
 - [nnw-theme](https://github.com/dave-atx/nnw-theme) by Dave Marquard: the
