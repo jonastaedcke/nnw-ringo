@@ -18,47 +18,49 @@
 
 ## Highlights
 
-- **Large images, calm layout.** Images extend into the margins, wide tables
-  and code blocks scroll, and bookmarks and callouts become cards.
-- **Light and dark.** Follows the system appearance on Mac, iPhone and iPad.
-  All text colors meet the WCAG AA contrast ratio, and AAA when Increase
-  Contrast is turned on.
-- **Your text size.** Follows the text size chosen in NetNewsWire on the Mac
-  and Dynamic Type on iPhone and iPad.
-- **Comfortable line length.** The article sits in a narrow column that grows
-  with the text size, and headlines wrap into balanced lines.
-- **System fonts.** Uses the San Francisco family; nothing is downloaded.
-- **Videos that fit.** Embedded videos fill the column at 16:9, and short
-  videos stand in portrait.
-- **Underlined external links.** Links to other sites are underlined, so you
-  see at a glance when a link takes you away from the article’s site.
-- **Podcasts and attachments.** Players and attached files appear in the
-  article’s style.
+- **Images across the full width.** Photos run into the margins on the Mac
+  and from edge to edge on iPhone; their caption stays in the column.
+- **Native fonts and colors.** San Francisco in your text size, in colors for
+  light and dark mode that meet the WCAG contrast ratio.
+- **Comfortable line length.** A narrow column that grows with the text size,
+  with headlines in balanced lines.
+- **Embedded videos and posts.** Videos fill the column at 16:9; posts from
+  social networks are centered like other media.
+- **Podcasts.** Episodes play at the end of the article, in a card with their
+  cover, a player and their title, length and size.
+- **Cards and tables.** Bookmarks and callouts become cards; wide tables and
+  code blocks scroll.
 
-### JavaScript
+<details>
+<summary>With <b>Article JavaScript</b> on in NetNewsWire, the Ringo theme adds more; it stays readable without it.</summary>
 
-Turn on Article JavaScript in NetNewsWire for Ringo to apply all of its
-styles. Ringo stays readable without it.
-
-- **Theme settings.** The theme logo in the article header opens the theme
-  settings and shows a dot when GitHub has a new version, which they install.
+- **A blue dot for updates.** The theme logo in the article header shows a
+  blue dot when GitHub has a new version; its settings install it.
+- **Share by email.** The theme settings send the article by email as a clean
+  page of text and links, readable in any mail app.
+- **Footnotes in place.** Footnotes from common blogs and newsletters open in
+  a popover next to their marker; the notes at the end sit apart.
+- **Colored code.** Code blocks are colored by their language, with a menu to
+  pick another one and a button that copies the code.
+- **Relative dates.** The article header tells you how long ago an article
+  came out, in your language; a click shows the full date.
+- **Sections, links and emphasis.** Headings that link to themselves show a
+  thin #; links to other sites are underlined.
+- **Kickers and long bylines.** A topic before a colon moves above the title;
+  a long byline names the first two authors and how many more.
+- **Short videos in portrait.** Short videos stand upright, other videos keep
+  their proportions and fit the window.
 - **Cleaner articles.** Hides empty spacer paragraphs and a repeated title,
   and keeps images from being squashed.
-- **Share by email.** The theme settings send the article by email, readable
-  in any mail app.
-- **Footnotes in place.** Opens the footnotes of common providers in a popover
-  next to their marker instead of jumping to the end of the article.
-- **Better code blocks.** Colors the code by its language, with a menu to pick
-  another one and a button that copies it to the clipboard.
-- **Date in your language.** Shows how long ago an article came out, in your
-  language; a click shows the full date and time.
+
+</details>
 
 ## Install
 
 [Add to NetNewsWire](https://jonastaedcke.github.io/nnw-ringo/install/) · [NetNewsWire Theme Marketplace](https://dave-atx.github.io/nnw-theme-marketplace/#dejonastaedckethemesringo)
 
-With Article JavaScript on, Ringo tells you about new versions itself (see
-above). You can also subscribe to the theme's
+With **Article JavaScript** on, the Ringo theme tells you about new versions
+itself (see above). You can also subscribe to the theme's
 [release feed](https://github.com/jonastaedcke/nnw-ringo/releases.atom) in
 NetNewsWire to hear about updates.
 
@@ -74,5 +76,5 @@ NetNewsWire to hear about updates.
 - [Reeder Classic](https://www.reederapp.com/classic/): the inspiration for the
   article design.
 - [Zhang liven](https://unsplash.com/@lvenfoto):
-  [“Misty blue mountains rise above calm water”](https://unsplash.com/photos/BiLh-YznD0I)
-  (Unsplash License).
+  [“Misty blue mountains rise above calm water”](https://unsplash.com/photos/BiLh-YznD0I),
+  edited, in the screenshots (Unsplash License).
