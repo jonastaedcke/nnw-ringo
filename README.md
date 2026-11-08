@@ -46,6 +46,8 @@
   came out, in your language; a click shows the full date.
 - **Sections, links and emphasis.** Headings that link to themselves show a
   thin #; links to other sites are underlined.
+- **Abbreviations explained.** Point at or tap a dotted abbreviation, and its
+  meaning opens in a small tooltip.
 - **Kickers and long bylines.** A topic before a colon moves above the title;
   a long byline names the first two authors and how many more.
 - **Short videos in portrait.** Short videos stand upright, other videos keep
