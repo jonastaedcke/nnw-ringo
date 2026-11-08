@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.19.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.18.0...v1.19.0) (2026-11-08)
+
+### Added
+
+* explain abbreviations in a tooltip on every device and underline them like the theme's other underlines
+
+### Fixed
+
+* color code blocks from Pygments and give them a language menu
+* link a heading to itself through a thin "#" instead of its text, also when it is linked through an anchor name
+* recognize footnotes and page links that use the article's own link
+* scroll to targets within the article and mark headings whose link target the feed left out
+* show admonitions from Sphinx and MkDocs sites like GitHub's alerts
+
 ## [1.18.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.17.0...v1.18.0) (2026-11-06)
 
 ### Added
