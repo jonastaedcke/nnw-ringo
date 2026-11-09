@@ -18,8 +18,8 @@
 
 ## Highlights
 
-- **Images across the full width.** Photos run into the margins on the Mac
-  and from edge to edge on iPhone; their caption stays in the column.
+- **Images across the full width.** Photos run into the margins on the Mac and
+  from edge to edge on iPhone; their caption stays in the column.
 - **Native fonts and colors.** San Francisco in your text size, in colors for
   light and dark mode that meet the WCAG contrast ratio.
 - **Comfortable line length.** A narrow column that grows with the text size,
@@ -34,32 +34,33 @@
 <details>
 <summary>With <b>Article JavaScript</b> on in NetNewsWire, the Ringo theme adds more; it stays readable without it.</summary>
 
-- **A blue dot for updates.** The theme logo in the article header shows a
-  blue dot when GitHub has a new version; its settings install it.
+- **A blue dot for updates.** The theme logo in the article header shows a blue
+  dot when GitHub has a new version; its settings install it.
 - **Share by email.** The theme settings send the article by email as a clean
   page of text and links, readable in any mail app.
-- **Footnotes in place.** Footnotes from common blogs and newsletters open in
-  a popover next to their marker; the notes at the end sit apart.
+- **Footnotes in place.** Footnotes from common blogs and newsletters open in a
+  popover next to their marker; the notes at the end sit apart.
 - **Colored code.** Code blocks are colored by their language, with a menu to
   pick another one and a button that copies the code.
-- **Relative dates.** The article header tells you how long ago an article
-  came out, in your language; a click shows the full date.
-- **Sections, links and emphasis.** Headings that link to themselves show a
-  thin #; links to other sites are underlined.
+- **Relative dates.** The article header tells you how long ago an article came
+  out, in your language; a click shows the full date.
+- **Sections, links and emphasis.** Headings that link to themselves show a thin
+  #; links to other sites are underlined.
 - **Abbreviations explained.** Point at or tap a dotted abbreviation, and its
   meaning opens in a small tooltip.
-- **Kickers and long bylines.** A topic before a colon moves above the title;
-  a long byline names the first two authors and how many more.
+- **Kickers and long bylines.** A topic before a colon moves above the title; a
+  long byline names the first two authors and how many more.
 - **Short videos in portrait.** Short videos stand upright, other videos keep
   their proportions and fit the window.
-- **Cleaner articles.** Hides empty spacer paragraphs and a repeated title,
-  and keeps images from being squashed.
+- **Cleaner articles.** Hides empty spacer paragraphs and a repeated title, and
+  keeps images from being squashed.
 
 </details>
 
 ## Install
 
-[Add to NetNewsWire](https://jonastaedcke.github.io/nnw-ringo/install/) · [NetNewsWire Theme Marketplace](https://dave-atx.github.io/nnw-theme-marketplace/#dejonastaedckethemesringo)
+[Add to NetNewsWire](https://jonastaedcke.github.io/nnw-ringo/install/) ·
+[NetNewsWire Theme Marketplace](https://dave-atx.github.io/nnw-theme-marketplace/#dejonastaedckethemesringo)
 
 With **Article JavaScript** on, the Ringo theme tells you about new versions
 itself (see above). You can also subscribe to the theme's
@@ -69,10 +70,10 @@ NetNewsWire to hear about updates.
 ## Credits
 
 - [Ember](https://github.com/dave-atx/ember-nnw-theme) by Dave Marquard: the
-  script that opens the footnotes of common providers as popovers builds on
-  its footnote adapter (Apache License 2.0).
-- [highlight.js](https://highlightjs.org) by Ivan Sagalaev and contributors:
-  the syntax highlighting of code blocks (BSD 3-Clause License).
+  script that opens the footnotes of common providers as popovers builds on its
+  footnote adapter (Apache License 2.0).
+- [highlight.js](https://highlightjs.org) by Ivan Sagalaev and contributors: the
+  syntax highlighting of code blocks (BSD 3-Clause License).
 - [nnw-theme](https://github.com/dave-atx/nnw-theme) by Dave Marquard: the
   tooling that checks, renders and packages the theme.
 - [Reeder Classic](https://www.reederapp.com/classic/): the inspiration for the
