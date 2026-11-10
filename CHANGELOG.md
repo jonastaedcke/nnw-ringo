@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.21.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.20.0...v1.21.0) (2026-11-10)
+
+### Added
+
+* show only the headings with the three lines beside the theme logo, and jump to one with a click
+* report a problem with the theme from its settings, with the article's site already filled in
+
+### Fixed
+
+* let more tables of contents jump to their headings
+* remove a gap above the text of some articles
+
 ## [1.20.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.19.0...v1.20.0) (2026-11-09)
 
 ### Added

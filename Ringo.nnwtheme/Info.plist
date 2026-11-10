@@ -11,8 +11,8 @@
 	<key>CreatorName</key>
 	<string>Jonas Taedcke</string>
 	<key>Version</key>
-	<integer>28</integer>
+	<integer>29</integer>
 	<key>CFBundleShortVersionString</key>
-	<string>1.20.0</string>
+	<string>1.21.0</string>
 </dict>
 </plist>
