@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.21.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.21.0...v1.21.1) (2026-11-10)
+
+### Fixed
+
+* keep the leaving theme settings button from scrolling the page sideways
+
 ## [1.21.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.20.0...v1.21.0) (2026-11-10)
 
 ### Added
