@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.20.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.19.0...v1.20.0) (2026-11-09)
+
+### Added
+
+* show the feed's main image, video or audio above the article
+* end the article with its notes, after the feed's media
+
+### Fixed
+
+* unify the grays and tune them slightly for more harmonious reading
+
 ## [1.19.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.18.0...v1.19.0) (2026-11-08)
 
 ### Added
