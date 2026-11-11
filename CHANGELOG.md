@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.2](https://github.com/jonastaedcke/nnw-ringo/compare/v1.21.1...v1.21.2) (2026-11-11)
+
+### Fixed
+
+* keep the table of contents and theme settings buttons in the header ([#4](https://github.com/jonastaedcke/nnw-ringo/issues/4))
+* move the focus to the heading opened from the table of contents
+
 ## [1.21.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.21.0...v1.21.1) (2026-11-10)
 
 ### Fixed
