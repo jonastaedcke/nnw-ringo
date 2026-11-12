@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   release:
-    uses: dave-atx/nnw-theme/.github/workflows/theme-release.yml@d87463e692434986ae1d0279fb559846c28b6087 # v2
+    uses: dave-atx/nnw-theme/.github/workflows/theme-release.yml@054898a346a6f0bf3a2cd12196535dbf7b61dead # v2
     with:
       tag: ${{ inputs.tag }}
       notes: ${{ inputs.notes }}
