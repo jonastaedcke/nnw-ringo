@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.22.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.21.2...v1.22.0) (2026-11-12)
+
+### Added
+
+* avoid a lone word on a paragraph's last line
+* fade footnote popovers in and out
+
+### Fixed
+
+* highlight code blocks that put each line in a box of its own
+* keep footnote return arrows from turning into emoji on iOS
+* make footnote return links easier to tap
+* show the copy button on articles without an https link
+
 ## [1.21.2](https://github.com/jonastaedcke/nnw-ringo/compare/v1.21.1...v1.21.2) (2026-11-11)
 
 ### Fixed
