@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.23.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.22.0...v1.23.0) (2026-11-14)
+
+### Added
+
+* blur the article behind the theme settings and center their title
+* draw a code block's copy button and language menu on glass
+* open an article's images larger on the Mac, with their captions
+
+### Fixed
+
+* color code blocks whose URLs the feed turned into links
+* keep WordPress gallery images off the window edges on a phone
+* number an article's headings below its title without gaps
+* open hand-written footnotes as popovers and set them apart below
+* point a heading's anchor link to the article, not the feed's home page
+* round a code block's copy button and language menu like its code
+* show the text next to a Home Assistant image as its caption
+* show where the focus is when the settings or the image viewer open
+* show WordPress galleries in rows, in the order of their images
+
+### Changed
+
+* name what scripts and stylesheet both match in one place
+* take the remaining shared names from markup.ts
+
 ## [1.22.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.21.2...v1.22.0) (2026-11-12)
 
 ### Added
