@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.23.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.23.0...v1.23.1) (2026-11-17)
+
+### Fixed
+
+* give links enough contrast in dark mode
+* show the language menu on code blocks with markup of their own
+
+
 ## [1.23.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.22.0...v1.23.0) (2026-11-14)
 
 ### Added
