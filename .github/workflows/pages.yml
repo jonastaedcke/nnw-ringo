@@ -21,4 +21,4 @@ concurrency:
 
 jobs:
   pages:
-    uses: dave-atx/nnw-theme/.github/workflows/theme-pages.yml@054898a346a6f0bf3a2cd12196535dbf7b61dead # v2
+    uses: dave-atx/nnw-theme/.github/workflows/theme-pages.yml@627a75d67304f3f960875b29e897602b2f1f5ae8 # v2

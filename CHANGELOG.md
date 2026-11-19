@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.24.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.23.1...v1.24.0) (2026-11-19)
+
+### Added
+
+* let the update button open NetNewsWire directly on the Mac
+
+### Fixed
+
+* name each author once when a feed joins them with "and" itself
+* open footnotes whose markers link to their source
+* set a feed's aside note like a caption
+* treat the timeline's thumbnail like any other image in the article
+
 ## [1.23.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.23.0...v1.23.1) (2026-11-17)
 
 ### Fixed
