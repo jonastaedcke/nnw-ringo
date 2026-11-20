@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.24.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.24.0...v1.24.1) (2026-11-19)
+
+### Documentation
+
+* blur the podcast cover in the showcase article and its images
+* render only the overview page's images with translated text per language
+* show the marketplace's most downloaded badge above the questions
+
 ## [1.24.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.23.1...v1.24.0) (2026-11-19)
 
 ### Added
