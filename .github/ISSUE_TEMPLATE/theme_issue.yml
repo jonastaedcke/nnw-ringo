@@ -62,12 +62,12 @@ body:
         - iPhone and iPad: bottom of NetNewsWire's settings
       multiple: true
       options:
+        - '7.3.1 (Mac)'
         - '7.3 (Mac)'
         - '7.2.1 (Mac)'
-        - '7.2 (Mac)'
+        - '7.3 (iPhone, iPad)'
         - '7.2 (iPhone, iPad)'
         - '7.1.3 (iPhone, iPad)'
-        - '7.1.2 (iPhone, iPad)'
         - 'Beta (Mac)'
         - 'TestFlight (iPhone, iPad)'
         - 'Older'

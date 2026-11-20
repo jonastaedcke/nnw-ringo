@@ -289,12 +289,12 @@
 
 * give links and buttons a hover and focus state
 * hide a horizontal rule right before a heading
-* size CodePen embeds from their src and center images in <center>
+* size CodePen embeds from their src and center images in `<center>`
 
 ### Fixed
 
 * color the settings close button like the R on the photo
-* drop the underline and bold of link text wrapped in <u> or <strong>
+* drop the underline and bold of link text wrapped in `<u>` or `<strong>`
 * find a footnote's note by its return link when the feed drops ids
 * recognize footnote links whose scheme differs from the page's base
 
