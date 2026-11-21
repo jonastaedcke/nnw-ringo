@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.25.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.24.0...v1.25.0) (2026-11-21)
+
+### Added
+
+* give untitled articles a heading that links to their page
+* show the theme and its website in Dutch
+
+### Fixed
+
+* center the theme settings and table of contents buttons on the dateline
+* keep embedded posts within the box they are in
+
 ## [1.24.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.23.1...v1.24.0) (2026-11-19)
 
 ### Added
