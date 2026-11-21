@@ -59,8 +59,7 @@
 
 ## Install
 
-[Add to NetNewsWire](https://jonastaedcke.github.io/nnw-ringo/install/) ·
-[NetNewsWire Theme Marketplace](https://dave-atx.github.io/nnw-theme-marketplace/#dejonastaedckethemesringo)
+[Add to NetNewsWire](https://ringo-the.me/install/?utm_source=nnw-ringo&utm_medium=readme&utm_campaign=install)
 
 With **Article JavaScript** on, the Ringo theme tells you about new versions
 itself (see above). You can also subscribe to the theme's
