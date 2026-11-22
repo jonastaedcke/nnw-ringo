@@ -1,3 +1,10 @@
+<a href="https://ringo-the.me/install/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=title">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="screenshots/install-button-dark.svg">
+    <img align="right" alt="Add to NetNewsWire" src="screenshots/install-button-light.svg">
+  </picture>
+</a>
+
 <!-- nnw-theme-identity:start -->
 
 # Ringo
@@ -10,8 +17,8 @@
 </picture>
 
 <p align="center">
-  Ringo is a calm, focused reading theme for <a href="https://netnewswire.com">NetNewsWire</a>,
-  inspired by the article design of <a href="https://www.reederapp.com/classic/">Reeder Classic</a>.<br>
+  Ringo is a calm, focused reading theme for <a href="https://netnewswire.com">NetNewsWire</a>
+  on Mac, iPhone and iPad, inspired by the article design of <a href="https://www.reederapp.com/classic/">Reeder Classic</a>.<br>
   See it in a live preview on its
   <a href="https://ringo-the.me/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=introduction">website</a>.
 </p>
@@ -28,14 +35,18 @@
   social networks are centered like other media.
 - **Podcasts.** Episodes play at the end of the article, in a card with their
   cover, a player and their title, length and size.
-- **Cards and tables.** Bookmarks and callouts become cards; wide tables and
-  code blocks scroll.
+- **Notes, tips and warnings.** They stand out with a colored bar and title,
+  from a calm blue note to a red warning.
+- **Cards and tables.** Bookmarks become cards; wide tables and code blocks
+  scroll.
 
 <details>
 <summary>With <b>Article JavaScript</b> on in NetNewsWire, the Ringo theme adds more; it stays readable without it.</summary>
 
-- **A blue dot for updates.** The theme logo in the article header shows a blue
-  dot when GitHub has a new version; its settings install it.
+- **Contents and update dot.** Three lines beside the theme logo show just the
+  headings; a blue dot on it marks a new version on GitHub.
+- **Images up close.** On the Mac, a click opens a photo large in the window,
+  with its caption and arrows to the article’s other images.
 - **Share by email.** The theme settings send the article by email as a clean
   page of text and links, readable in any mail app.
 - **Footnotes in place.** Footnotes from common blogs and newsletters open in a
@@ -52,14 +63,21 @@
   long byline names the first two authors and how many more.
 - **Short videos in portrait.** Short videos stand upright, other videos keep
   their proportions and fit the window.
-- **Cleaner articles.** Hides empty spacer paragraphs and a repeated title, and
-  keeps images from being squashed.
+- **Tidy articles.** Stray line breaks, empty paragraphs and a repeated title
+  disappear, and text without paragraphs gets them.
 
 </details>
 
 ## Install
 
-[Add to NetNewsWire](https://ringo-the.me/install/?utm_source=nnw-ringo&utm_medium=readme&utm_campaign=install)
+<p align="center">
+  <a href="https://ringo-the.me/install/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=install">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="screenshots/install-button-dark.svg">
+      <img alt="Add to NetNewsWire" src="screenshots/install-button-light.svg">
+    </picture>
+  </a>
+</p>
 
 With **Article JavaScript** on, the Ringo theme tells you about new versions
 itself (see above). You can also subscribe to the theme's
