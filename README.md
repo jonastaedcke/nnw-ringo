@@ -1,7 +1,7 @@
 <a href="https://ringo-the.me/install/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=title">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="screenshots/install-button-dark.svg">
-    <img align="right" alt="Add to NetNewsWire" src="screenshots/install-button-light.svg">
+    <img align="right" vspace="22" alt="Add to NetNewsWire" src="screenshots/install-button-light.svg">
   </picture>
 </a>
 
