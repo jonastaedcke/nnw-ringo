@@ -1,13 +1,6 @@
-<a href="https://ringo-the.me/install/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=title">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="screenshots/install-button-title-dark.svg">
-    <img align="right" alt="Add to NetNewsWire" src="screenshots/install-button-title-light.svg">
-  </picture>
-</a>
-
 <!-- nnw-theme-identity:start -->
 
-# Ringo
+# Ringo <a href="https://ringo-the.me/install/?utm_source=nnw-ringo&amp;utm_medium=readme&amp;utm_campaign=title"><picture><source media="(prefers-color-scheme: dark)" srcset="screenshots/install-button-dark.svg"><img align="right" alt="Add to NetNewsWire" src="screenshots/install-button-light.svg"></picture></a>
 
 <!-- nnw-theme-identity:end -->
 
