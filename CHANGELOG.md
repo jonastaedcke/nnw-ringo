@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.25.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.25.0...v1.25.1) (2026-11-23)
+
+### Fixed
+
+* show the whole video in fullscreen
+* indent a note beside the text like a quote
+
 ## [1.25.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.24.0...v1.25.0) (2026-11-21)
 
 ### Added
