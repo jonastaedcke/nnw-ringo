@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.26.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.25.1...v1.26.0) (2026-11-26)
+
+> [!NOTE]
+> Long articles with lots of line breaks, such as MacRumors' deal roundups, now open about nine times faster. Ringo used to spend 6,300,000 microseconds tidying up those line breaks before you could read a single word, enough time to brew a coffee and ask yourself which NetNewsWire theme is the best. (Ringo, obviously. It just took a while to prove it.) It now needs 700,000 microseconds, which is still a lot of microseconds, but under a second.
+
+### Added
+
+* show a note with a link to the file in place of media that do not load
+
+### Fixed
+
+* hide blank divs and zero-width paragraphs between paragraphs
+* hide Substack's restack and expand buttons under images
+* open long articles with many line breaks in under a second instead of six
+* show the toggle card's chevron when the feed leaves its button empty
+
+### Documentation
+
+* add a security policy and a security.txt for the website
+
 ## [1.25.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.25.0...v1.25.1) (2026-11-23)
 
 ### Fixed

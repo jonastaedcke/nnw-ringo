@@ -11,9 +11,9 @@
 	<key>CreatorName</key>
 	<string>Jonas Taedcke</string>
 	<key>Version</key>
-	<integer>37</integer>
+	<integer>38</integer>
 	<key>CFBundleShortVersionString</key>
-	<string>1.25.1</string>
+	<string>1.26.0</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2026 Jonas Taedcke</string>
 </dict>
