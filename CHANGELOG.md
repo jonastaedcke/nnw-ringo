@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.26.1](https://github.com/jonastaedcke/nnw-ringo/compare/v1.26.0...v1.26.1) (2026-11-27)
+
+### Fixed
+
+* keep videos in old responsive boxes in place
+* let Chinese, Japanese and Korean text fill its lines
+
 ## [1.26.0](https://github.com/jonastaedcke/nnw-ringo/compare/v1.25.1...v1.26.0) (2026-11-26)
 
 > [!NOTE]
